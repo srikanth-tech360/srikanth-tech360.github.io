@@ -4,58 +4,124 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Srikanth Tech 360 | ASP.NET Core & AI Projects</title>
+
+  <!-- Meta for SEO -->
   <meta name="description" content="Explore Srikanth Gunti’s ASP.NET Core tutorials, AI use cases, and Azure-powered projects.">
   <meta name="keywords" content="ASP.NET Core, AI, Azure, GitHub, Srikanth Tech 360, OpenAI, full stack development" />
   <meta name="author" content="Srikanth Gunti" />
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Embedded CSS -->
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+    :root {
+      --primary: #004c99;
+      --secondary: #f5f9ff;
+      --accent: #0099cc;
+      --text: #1a1a1a;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f4f7fa;
-      color: #333;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      background: var(--secondary);
+      color: var(--text);
+      padding: 0;
+    }
+
     header {
-      background: #005fa3;
+      background: var(--primary);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d9e9ff;
+    }
+
     main {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1rem 2rem;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
     }
-    h1 {
-      font-size: 2rem;
+
+    section {
+      margin-bottom: 2rem;
     }
+
     h2 {
-      color: #005fa3;
-      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
     }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 0.7rem 0;
+    }
+
     a {
-      color: #007acc;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 600;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    ul {
-      padding-left: 1.2rem;
+
+    p {
+      color: var(--text);
+      margin: 0.5rem 0 1rem;
     }
+
     footer {
       margin-top: 3rem;
       text-align: center;
       font-size: 0.9rem;
-      color: #777;
+      color: var(--muted);
+      padding-bottom: 2rem;
+    }
+
+    .connect-links a {
+      margin-right: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Welcome to Srikanth Tech 360</h1>
     <p>ASP.NET Core Projects • AI-Powered Tools • Azure Insights</p>
@@ -67,7 +133,7 @@
       <ul>
         <li>
           <a href="https://github.com/srikanth-tech360/aspnetcore-pdf-features-header-watermark-logo" target="_blank">
-            📄 PDF Watermark and Header Generator – Built with ASP.NET Core MVC and enhanced by AI layout ideas
+            📄 Generate PDFs with Watermark, Logo, and Header in ASP.NET Core MVC – AI-enhanced layout suggestions
           </a>
         </li>
       </ul>
@@ -76,15 +142,15 @@
     <section>
       <h2>👨‍💻 About Me</h2>
       <p>
-        I’m Srikanth Gunti — a full stack developer, lifelong learner, and architect-in-progress working on real-world web and cloud solutions.
-        Passionate about ASP.NET Core, Azure, AI (OpenAI, Cognitive Services), and scalable system design.
+        I’m Srikanth Gunti — a hands-on full stack creator and architect-in-progress, building scalable web and cloud-native solutions. 
+        I blend ASP.NET Core, Azure, and AI (OpenAI/Cognitive Services) for business tools, developer productivity, and innovation.
       </p>
     </section>
 
     <section>
       <h2>🔗 Connect</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/srikanthgunti-it/" target="_blank">LinkedIn</a> |
+      <p class="connect-links">
+        <a href="https://www.linkedin.com/in/srikanthgunti-it/" target="_blank">LinkedIn</a>
         <a href="https://github.com/srikanth-tech360" target="_blank">GitHub</a>
       </p>
     </section>
@@ -93,5 +159,6 @@
   <footer>
     &copy; 2025 Srikanth Tech 360. Built with 💡 and shared via GitHub Pages.
   </footer>
+
 </body>
 </html>
